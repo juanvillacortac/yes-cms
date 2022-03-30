@@ -44,7 +44,7 @@
   {@html fontsTag}
 </svelte:head>
 
-<Favicons favicon={''} themeColor="#000" titleName="Juan Villacorta" />
+<Favicons favicon="/images/logo.svg" themeColor="#000" titleName="Juan Villacorta" />
 
 <Cursor />
 <div
