@@ -19,7 +19,7 @@ export const get: RequestHandler = (event) => {
       'content-type': 'application/json; charset=utf-8',
     },
     body: {
-      name: 'Juan Villacorta',
+      name: 'YES Campus',
       short_name: 'Juan Villacorta',
       description: 'Juan Villacorta',
       dir: 'auto',
