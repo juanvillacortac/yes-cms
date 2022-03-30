@@ -4,7 +4,6 @@
   import '$lib/styles/base.css'
   import '$lib/styles/components.css'
 
-  import Components from '$lib/styles/components.css'
   import Favicons from '$lib/components/Favicons.svelte'
   import Cursor from '$lib/components/Cursor.svelte'
   import Header, { height } from '$lib/components/nav/Header.svelte'
