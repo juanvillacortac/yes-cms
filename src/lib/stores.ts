@@ -1,6 +1,7 @@
 import type { Writable } from 'svelte/store'
 import { browser } from '$app/env'
 import { writable, get } from 'svelte/store'
+import type { Page } from './models/page'
 
 export const layoutStore = writable({
   bg: '#cbccd1',
@@ -45,3 +46,5 @@ export function persistentWritable<T>(
 export const preferences = persistentWritable('preferences', {
   darkMode: false,
 })
+
+export const pageData = writable<Page>(null)

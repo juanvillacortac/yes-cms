@@ -1,17 +1,7 @@
-<script lang="ts" context="module">
-  export type HeroData = {
-    logo?: string // `${string}.svg`
-    image?: string
-    description?: string
-    callAction?: string
-    callActionBgColor?: string
-    callActionTextColor?: string
-    backgroundColor?: string
-    backgroundImage?: string
-  }
-</script>
-
 <script lang="ts">
+  import type { HeroData } from '$lib/models/hero'
+  import { pageData } from '$lib/stores'
+
   import Image from '../caravaggio/Image.svelte'
 
   import Viewport from '../Viewport.svelte'
@@ -29,14 +19,12 @@
   }
 
   const get = <K extends keyof HeroData>(key: K): HeroData[K] =>
-    data[key] || defaultData[key]
-
-  export let data: HeroData = {}
+    $pageData?.hero[key] || defaultData[key]
 </script>
 
 <Viewport
   class="bg-cover w-full relative overflow-hidden"
-  style="background-color: {get('backgroundColor')}; background-image: url({get(
+  style="background-color: {$pageData.theme.primary}; background-image: url({get(
     'backgroundImage'
   )})"
 >
@@ -47,12 +35,12 @@
   >
     <Image
       src={get('image')}
-      showOriginal=".svg"
+      showOriginal=""
       options={{
         q: 90,
         o: 'webp',
       }}
-      class="w-full transform translate-y-6"
+      class="w-full transform"
     />
   </div>
   <div class="flex flex-wrap text-white py-16 pb-0 content lg:py-12">
@@ -64,7 +52,7 @@
           q: 90,
           o: 'webp',
         }}
-        class="mb-6 w-full w-8/10 lg:-ml-3"
+        class="mb-6 w-full w-8/10"
       />
       <p class="mb-8 t-p">{get('description')}</p>
       <div class="transform duration-200 hover:-translate-y-px">
@@ -78,11 +66,11 @@
   </div>
   <Image
     src={get('image')}
-    showOriginal=".svg"
+    showOriginal=""
     options={{
       q: 90,
       o: 'webp',
     }}
-    class="w-full transform translate-y-6 anim lg:hidden"
+    class="w-full py-16 anim lg:hidden"
   />
 </Viewport>

@@ -131,8 +131,8 @@ export default defineConfig({
       fontFamily: {
         cool: ['Comforter Brush', 'sans-serif'],
         bakbak: ['Bakbak One', 'sans-serif'],
-        title: ['Inter', 'sans-serif'],
-        sans: ['Inter', 'sans-serif'],
+        title: ['Oxygen', 'sans-serif'],
+        sans: ['Roboto', 'sans-serif'],
         serif: ['Merriweather', 'serif'],
       },
       spacing: {

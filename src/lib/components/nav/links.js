@@ -32,23 +32,23 @@ export default [
     childrens: [
       {
         titulo: 'Young Entrepreneur',
-        href: '/young-entrepreneur',
+        href: 'https://yescampus.io/young-entrepreneur',
       },
       {
         titulo: 'Young Entrepreneur Full Inclusion',
-        href: '/full-inclusion',
+        href: 'https://yescampus.io/full-inclusion',
       },
       {
         titulo: 'Young Leaders',
-        href: '/leaders',
+        href: 'https://yescampus.io/leaders',
       },
       {
         titulo: 'Girl E',
-        href: '/girl-e',
+        href: 'https://yescampus.io/girl-e',
       },
       {
         titulo: 'Evolution',
-        href: '/evolution',
+        href: 'https://yescampus.io/evolution',
       },
     ],
   },

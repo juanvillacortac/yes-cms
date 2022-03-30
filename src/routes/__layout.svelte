@@ -15,7 +15,7 @@
     document.documentElement.classList.toggle('dark', $preferences.darkMode)
 
   const fontsURL =
-    'https://fonts.googleapis.com/css2?family=Bakbak+One&family=Inter:wght@100;300;400;700;900&family=Comforter+Brush&display=swap'
+    'https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap'
 
   const fontsTag = `<link rel="preconnect" href="https://fonts.googleapis.com" />
   <link
@@ -49,7 +49,7 @@
 
 <Cursor />
 <div
-  class="cursor-diff flex flex-col min-h-screen w-full text-yes-gray-500 duration-200 dark:text-yes-gray-300"
+  class="cursor-diff flex flex-col font-title min-h-screen w-full text-yes-gray-500 duration-200 dark:text-yes-gray-300"
   use:styles={cssGlobals}
 >
   <div class="z-40">

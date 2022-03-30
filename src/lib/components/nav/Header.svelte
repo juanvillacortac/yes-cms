@@ -57,7 +57,7 @@
         class="flex pointer-events-auto"
         transition:fly|local={{ x: -50, duration: 400 }}
       >
-        <a href="/" title="Home" class="rounded-xl duration-100">
+        <a href="https://yescampus.io" title="Home" class="rounded-xl duration-100">
           <img
             src="/images/logo{dark ? '-white' : ''}.svg"
             class="h-16 transform duration-200 hover:scale-110"
